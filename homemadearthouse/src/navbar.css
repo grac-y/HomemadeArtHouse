@@ -1,0 +1,275 @@
+header{
+    position: absolute;
+    width: 97%;
+    top: 3%;
+    z-index: 11111111;
+    padding: 5px;
+    left: 1%;
+}
+
+.container{
+    width: 100%;
+}
+.container .row{
+    display: flex;
+    margin: 0 39px;
+    width: 94%;
+    justify-content: space-between;
+}
+.container .row .col{
+    display: flex;
+    justify-content: space-between;
+}
+.container .row .col-1{
+    flex-basis: 19%;
+}
+.container .row .col-2{
+    flex-basis: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    /* height: 100%; */
+}
+.container .row .col-2.active {
+    position: fixed;
+    top: 48px;
+    /* left: 0; */
+    right: 5px;
+    bottom: 0;
+    background-color: #eee;
+    z-index: 99;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    width: 31%;
+}
+.container .row .col-2 .nav{
+    display: flex;
+    flex-basis: 61%;
+}
+.container .row .col-2 .nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+}
+.container .row .col-2 .nav ul li{
+    margin: 4px 5px;
+    /* color: white; */
+    font-size: 20px;
+    /* font-family: 'Merriweather', serif; */
+    font-weight: 600;
+}
+.container .row .col-2 .nav ul li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container .row .col-2 .nav ul li a{
+    text-decoration: none;
+}
+.logo_icon{
+    width: 83%;
+    background: url(../public/img/Logo1.jpg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+.logo_icon a{
+    width: 100%;
+    text-decoration: none;
+}
+.logo_icon:hover{
+    cursor: pointer;
+}
+.logo_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4%;
+    color: #0f528c;
+    font-weight: 500;
+    font-size: 20px;
+}
+.container .row .col .buttons{
+    flex-basis: 29%;
+    display: flex;
+    align-items: center;
+}
+.container .row .col .buttons:hover{
+    cursor: pointer;
+}
+.container .row .col-2 .buttons a{
+    margin-top: 0;
+    width: 80%;
+    padding: 15px 0px;
+    display: flex;
+    background-color: #0f528c;
+    /* transform: translate3d(0px, 0px, 0px); */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container .row .col-2 .buttons a:hover{
+    background-color: #1064ac;
+}
+.container .row .menu_btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.container .row .menu_btn i{
+    font-size: 29px;
+    padding-right: 11px;
+}
+
+@media(max-width:1400px) {
+    header{
+        width: 99%;
+    }
+    .container .row{
+        width: 96%;
+        margin: 0 26px;
+    }
+}
+@media(max-width:1310px) {
+    .container .row{
+        width: 98%;
+        margin-left: 11px;
+    }
+    .container .row .col-1 {
+        flex-basis: 20%;
+    }
+}
+@media(max-width:1230px) {
+    .container .row .col-1 {
+        flex-basis: 22%;
+    }
+}
+@media(max-width:1100px) {
+    .container .row .col-1 {
+        flex-basis: 24%;
+    }
+    .container .row .col-2 {
+        flex-basis: 35%;
+    }
+}
+@media(max-width:990px) {
+    .container .row .col-1 {
+        flex-basis: 27%;
+    }
+    .logo_name{
+        padding-left: 3%;
+    }
+    .container .row .col .buttons {
+        flex-basis: 33%;
+    }
+}
+@media(max-width:900px) {
+    .container .row .col-1 {
+        flex-basis: 28%;
+    }
+    .logo_name{
+        font-size: 18px;
+    }
+    .container .row .col .nav ul li {
+        font-size: 18px;
+    }
+    .container .row .col-2 .buttons a {
+        padding: 13px 0px;
+    }
+}
+@media(max-width:800px){
+    header{
+        position: fixed;
+        top: 0;
+        height: 3.4rem;
+        width: 100%;
+        padding: 7px;
+        left: 0;
+        margin: 0;
+        background-color: #eee;
+    }
+    .container{
+        height: 100%;
+    }
+    .container .row{
+        height: 100%;
+    }
+    .container .row .col-1 {
+        flex-basis: 30%;
+    }
+    .container .row .col-2 {
+        display: none;
+    }
+
+    .container .row .menu_btn {
+        display: flex;
+    }
+
+    .container .row .col-2.active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .container .row .col-2 .nav{
+        flex-basis: 20%;
+        padding: 5px;
+    }
+    .container .row .col-2 .nav ul{
+        flex-direction: column;
+        float: left;
+    }
+    .container .row .col-2 .nav ul li{
+        float: left;
+    }
+    .container .row .col .buttons {
+        flex-basis: 9%;
+    }
+    .container .row .col-2 .buttons a {
+        padding: 10px 16px;
+    }
+}
+@media(max-width:700px){
+    .container .row .col-1 {
+        flex-basis: 35%;
+    }
+}
+@media(max-width:600px){
+    .container .row .col-1 {
+        flex-basis: 40%;
+    }
+    .logo_name {
+        font-size: 17px;
+    }
+}
+@media(max-width:495px){
+    .container .row .col-1 {
+        flex-basis: 23%;
+    }
+    .logo_icon{
+        width: 64%;
+    }
+    .logo_name{
+        display: none;
+    }
+    .container .row .col-2.active{
+        width: 52%;
+    }
+}
+@media(max-width:230px){
+    .container .row .col-1 {
+        flex-basis: 31%;
+    }
+}

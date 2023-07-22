@@ -1,0 +1,82 @@
+.about-section {
+    /* background-color: #f9f9f9; */
+    padding: 40px 0;
+    position: relative;
+    top: 80px;
+  }
+  
+  .about-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .analytics-section {
+    padding: 26px 0;
+    position: relative;
+    margin: 10px;
+    top: 40px;
+  }
+  
+  .analytics-section .container {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .analytics-section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .analytics-section .analytics-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .analytics-section p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px;
+  }
+  .channel-button {
+    display: inline-block;
+    background-color: #0f528c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .channel-button:hover {
+    background-color: #1064ac;
+  }
+
+@media (max-width:790px) {
+    .about-section {
+        padding: 40px 51px;
+    }
+}
+@media (max-width:610px) {
+    .analytics-section {
+        padding: 26px 31px;
+    }
+}
+  

@@ -1,0 +1,124 @@
+a{
+    text-decoration: none;
+}
+.expContainer{
+    position: relative;
+    /* overflow: auto; */
+}
+.expContainer .main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* overflow: auto; */
+}
+.expContainer .cardContainer{
+    width: 99%;
+    padding: 18px;
+    position: relative;
+    top: 80px;
+}
+.expContainer .cardContainer .masonryContainer{
+    width: 100%;
+    columns: 4;
+    column-gap: 40px;
+}
+.mainCard{
+    width: 100%;
+    margin-bottom: 10px;
+    overflow: auto;
+    position: relative;
+}
+.mainCard img{
+    max-width: 100%;
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+.mainCard .detail{
+    padding: 0 6px;
+}
+.mainCard .detail p{
+    font-size: 21px;
+    font-weight: 500;
+}
+.mainCard img:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.mainCard .buttons{
+    position: absolute;
+    top: 10px;
+    width: 22%;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+.mainCard .buttons a:hover{
+    background-color: #1064ac;
+}
+.mainCard .buttons a{
+    margin-top: 0;
+    width: 80%;
+    padding: 11px 0px;
+    display: flex;
+    background-color: #0f528c;
+    transform: translate3d(0px, 0px, 0px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 845px){
+    .mainCard .detail p{
+        font-size: 15px;
+    }
+    .expContainer .cardContainer .masonryContainer{
+        columns: 4;
+        column-gap: 30px;
+    }
+}
+@media (max-width: 630px){
+    .mainCard .detail p{
+        font-size: 14px;
+    }
+    .expContainer .cardContainer .masonryContainer{
+        columns: 3;
+        column-gap: 25px;
+    }
+}
+@media (max-width: 430px){
+    .mainCard .detail p{
+        font-size: 13px;
+    }
+    .expContainer .cardContainer .masonryContainer{
+        columns: 3;
+        column-gap: 20px;
+    }
+}
+@media (max-width: 370px){
+    .expContainer .cardContainer .masonryContainer{
+        columns: 2;
+    }
+}
+@media (max-width: 260px){
+    .mainCard .detail p{
+        font-size: 13px;
+    }
+    .expContainer .cardContainer .masonryContainer{
+        columns: 1;
+        column-gap: 20px;
+    }
+}
